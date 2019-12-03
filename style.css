@@ -1,0 +1,83 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #dbd9dc;
+}
+
+#canvas {
+  background-color: #99ceed;
+  height: 800px;
+  padding: 20px;
+  width: 100px auto;
+  margin: 20px 200px;
+  border-radius: 15px;
+  box-shadow: 0px 3px #1a82bf;
+}
+#canvas #top {
+  position: relative;
+}
+#canvas #top #life {
+  color: red;
+  background-color: #f1f890;
+  box-shadow: 0px 3px #98a361;
+  border-radius: 3px;
+  position: absolute;
+  padding: 10px;
+  width: 80px;
+  display: none;
+}
+#canvas #top #score {
+  background-color: #f1f890;
+  float: right;
+  padding: 10px;
+  color: #9ca24c;
+  box-shadow: 0px 3px #98a361;
+  border-radius: 2px;
+}
+#canvas #fruitsdrop {
+  background-color: white;
+  height: 550px;
+  width: auto;
+  margin: 50px 50px 10px 50px;
+  position: relative;
+  box-shadow: 0px 3px #4d619e;
+  border-radius: 3px;
+}
+#canvas #fruitsdrop #gameOver {
+  background: linear-gradient(to top, #ff876c, #f8bf66);
+  color: white;
+  position: absolute;
+  left: 70px;
+  top: 150px;
+  height: 200px;
+  width: 520px;
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+  display: none;
+}
+#canvas #catch {
+  background-color: #b78adb;
+  margin: 0 auto;
+  width: 400px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 3px #7a60a9;
+  border-radius: 2px;
+}
+#canvas #startReset {
+  background-color: #cbe7f5;
+  width: 100px;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 3px #7aa6c1;
+  cursor: pointer;
+}
+#canvas #startReset:active {
+  background-color: #9c89f6;
+  box-shadow: 0px 3px #6b54d3;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

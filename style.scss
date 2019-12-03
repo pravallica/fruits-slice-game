@@ -1,0 +1,91 @@
+$font:    Helvetica, sans-serif;
+$primary-color: #99ceed;
+$secondary-color: #f1f890;
+@mixin boxShadow($shadowColor){
+    box-shadow: 0px 3px$shadowColor;
+}
+@mixin borderRadius($width){
+    border-radius: $width;
+}
+
+body {
+  font: 100% $font;
+  background-color: #dbd9dc;
+}
+#canvas{
+    background-color:$primary-color ;
+    height: 800px;
+    padding:20px;
+    width:100px auto;
+    margin: 20px 200px;
+    @include borderRadius(15px);
+    @include boxShadow(#1a82bf);
+    #top{
+        position: relative;
+        #life{
+            color:red;
+            background-color: $secondary-color;
+            @include boxShadow(#98a361);
+            @include borderRadius(3px);
+            position: absolute;
+            padding:10px;
+            width: 80px;
+            display:none;
+        }
+        #score{
+            background-color: $secondary-color;
+            float:right;
+            padding:10px;
+            color:#9ca24c;
+            @include boxShadow(#98a361);
+            @include borderRadius(2px);
+        }
+    }
+    #fruitsdrop{
+        background-color: white;
+        height: 550px;
+        width: auto;
+        margin: 50px 50px 10px 50px ;
+        position:relative;
+        @include boxShadow(#4d619e);
+        @include borderRadius(3px);
+        #gameOver{
+            background: linear-gradient(to top,#ff876c,#f8bf66);
+            color:white;
+            position: absolute;
+            left:70px;
+            top:150px;
+            height:200px;
+            width:520px;
+            text-align: center;
+            padding: 30px;
+            font-size: 40px;
+            display:none;
+        }
+    }
+    #catch{
+        background-color: #b78adb;
+        margin:0 auto;
+        width:400px;
+        padding:10px;
+        text-align: center;
+        @include boxShadow(#7a60a9);
+        @include borderRadius(2px);
+    }
+    #startReset{
+        background-color: #cbe7f5;
+        width:100px;
+        margin: 10px auto;
+        padding:10px;
+        text-align: center;
+        @include borderRadius(5px);
+        @include boxShadow(#7aa6c1);
+        cursor: pointer;
+        &:active{
+            background-color: #9c89f6;
+            @include boxShadow(#6b54d3);
+            color:white;
+        }
+    }
+
+}
